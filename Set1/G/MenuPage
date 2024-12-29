@@ -7,16 +7,16 @@
 <br><br>
     <table border="4" align="center">
     <tr>
-    <th><a href="../Set1/E/Table.html">See all product list</a><th>
+    <th><a href="Set1/E/Table.html">See all product list</a><th>
     </tr>
     <tr>
-    <th><a href="../Set1/F/List.html">Available product list</a>
+    <th><a href="Set1/F/List.html">Available product list</a>
     </tr>
     <tr>
-    <th><a href="../Set1/C/Login.html">Login Page</a>
+    <th><a href="Set1/C/Login.html">Login Page</a>
     </tr>
     <tr>
-    <th><a href="../Set1/A/Purpose.html">Detail of website</a>
+    <th><a href="Set1/A/Purpose.html">Detail of website</a>
     </tr>
     </table>
 </body>
