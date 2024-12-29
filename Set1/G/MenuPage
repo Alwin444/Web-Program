@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>MenuPage</title>
+<body>
+<h1 style="text-align:center;color:Forestgreen;"><u>Menu</u></h1>
+<br>
+<br><br>
+    <table border="4" align="center">
+    <tr>
+    <th><a href="">See all product list</a><th>
+    </tr>
+    <tr>
+    <th><a href="">Available product list</a>
+    </tr>
+    <tr>
+    <th><a href="">Login Page</a>
+    </tr>
+    <tr>
+    <th><a href="">Detail of website</a>
+    </tr>
+    </table>
+</body>
+</html>
