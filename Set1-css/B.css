@@ -1,0 +1,99 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.w1{
+    margin-top: 10px;
+    border-style: solid;
+    background:transparent;
+    border-color: transparent;
+    border-radius: 25px;
+    transition: background-color 0.4s ease-in;
+    height:30px;
+    width:30px;
+}
+.w2{
+    margin-top: 10px;
+    border-style: solid;
+    background: transparent;
+    border-color: transparent;
+    border-radius: 25px;
+    margin-left: 12px;
+    transition: background-color 0.4s ease-in;
+    height:30px;
+    width: 30px;
+}
+
+.w1:hover{
+    background-color: rgba(165, 42, 42, 0.447);
+}
+.w2:hover{
+    background-color: rgba(165, 42, 42, 0.447);
+}
+
+.bhy{
+    color:white;
+}
+.topelem{
+    text-align:right;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+
+.Bof img{
+    height: 280px;
+    width: 310px;
+    margin-top: 80px;
+    margin-left: 590px;
+    margin-bottom: 2px;
+}
+
+.Bof span{
+    font-size: 45px;
+    background: radial-gradient(circle,white,rgb(209, 143, 0),rgb(211, 248, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: -236px;
+}
+
+.Bof p{
+    margin-left: 633.9px;
+    font-size: 12px;
+    background: radial-gradient(circle,white,rgb(209, 143, 0),rgb(211, 248, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Bof a{
+    text-decoration-line: none;
+    color:rgb(212, 212, 212);
+    display: block;
+    margin-left: 690px;
+    margin-top:169px;
+    border-style: solid;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    width: 130px;
+    height: 30px;
+    border-color: white;
+    text-align:center;
+    padding-top: 10px;
+    background: transparent;
+    transition: background-color 0.6s ease-in;
+}
+.Bof a:hover{
+    background-color: rgba(1, 253, 198, 0.459);
+}
+
+body{
+    background-image: url(https://getwallpapers.com/wallpaper/full/7/5/8/366303.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size:cover;
+}

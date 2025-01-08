@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 5px #da5acb,0 0 10px #9b59b6, 0 0 20px #db07e7, 0 0 40px #8e44ad, 0 0 80px #8e44ad;  
+    text-transform: uppercase;
+    font-size: 35px;
+    padding:40px;
+    margin-bottom: 30px;
+    text-align:center;
+
+}
+
+body{
+    background:url(https://img.freepik.com/free-photo/photo-background-green-textured-wall-rolling-floor-studio-photography-background-illuminated_1258-82807.jpg?t=st=1736076474~exp=1736080074~hmac=948af79f711835fb316e42f1779a0611127c80ea318be620a63ceab24d629080&w=740);
+    color:white;
+    font-size: 20px;
+}
+
+a{
+    text-decoration-line: none;
+    color:white;
+}
+
+.tyn{
+    margin-left: 680px;
+    position: relative;
+    margin-top: 70px;
+    border-style: solid;
+    border-radius: 25px;
+    width: 110px;
+    padding-left: 50px;
+    background: transparent;
+    border-color:white;
+    transition: background-color linear; 
+}
+
+.tyn:hover{
+    background-color: rgba(127, 255, 212, 0.46);
+}

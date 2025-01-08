@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://img.freepik.com/premium-photo/clear-bright-modern-kitchen-interior-background-with-beautifully-emptied-wood-table-top_127957-160.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration-line:none;
+    color: rgb(18, 0, 46);
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+section{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 580px;
+    padding: 30px;
+}
+
+.op{
+    border-style: solid;
+    border-color: white;
+    border-radius: 40px;
+    background: transparent;
+    width:200px;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.we{
+    border-style: solid;
+    border-color: white;
+    border-radius: 40px;
+    width: 200px;
+    background: transparent;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.Ex{
+    border-style: solid;
+    border-color: white;
+    border-radius: 40px;
+    width: 200px;
+    background: transparent;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.op:hover{
+    background-color: rgba(41, 219, 1, 0.625);
+}
+
+.we:hover{
+    background-color: rgba(41, 219, 1, 0.625);
+}
+.Ex:hover{
+    background-color: rgba(41, 219, 1, 0.625);
+}
