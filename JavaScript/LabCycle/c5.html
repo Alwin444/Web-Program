@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function pr(){
+                var c1,c2;
+                c1 = String(document.f1.n1.value);
+                c2 = Number(document.f1.a1.value);
+                if(c1.length === 0 || c2 < 1){
+                    alert("Empty Values");
+                    return;
+                }
+                else if(c1.length < 3 || !isNaN(c1)){
+                    alert("Enter the proper name");
+                    return;
+                }
+                else if(c2 < 18){
+                    alert("You are child! Don't enter here");
+                    return;
+                }
+                else if(c2 > 120){
+                    alert("Enter valid age");
+                    return;
+                }
+
+                else{
+                    alert("Uploaded succsesfully");
+                    return;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Student Validation</h1>
+        <br>
+        <form name="f1">
+            Name:
+            <input type="text" maxlength="30" name="n1" placeholder="Enter name here"><br><br>
+            Age:
+            <input type="number" name="a1" placeholder="Enter age here" min="1" max="120">
+            <br><br>
+            <input type="button" value="submit" onclick="pr();">
+        </form>
+    </body>
+</html>
