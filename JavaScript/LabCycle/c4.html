@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function pr(){
+                var num,i,con;
+                con = true;
+                num = Number(document.re.i11.value);
+                if(isNaN(num) || num < 1){
+                    alert("Enter positive numbers");
+                    document.re.i11.value = null;
+                    return;
+                }
+                 
+                for(i=2;i<=num-1;i++){
+                if(num%i === 0){
+                        con = false;
+                        break;
+                    }
+                }
+                if(con === true)
+                 document.re.i22.value = "The number "+num+" is prime";
+                else
+                 document.re.i22.value = "The number "+num+" is not prime";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Prime checker</h1>
+    <form name="re">
+        <br><br>
+        Enter the number to check:
+        <input class="i1" type="text" maxlength="6" name="i11">
+        <br>
+        Result:
+        <input type="text" class="i2" name="i22"><br>
+        <input type="button" class="sub" value="Check prime" onclick="pr();">
+    </form>
+    </body>
+</html>
