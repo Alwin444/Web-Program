@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="D.css">
+        <title>Tiles.com</title>
+        <script>
+            function iu(event){
+                var a,b,c,d,e,f,g,h,i;
+                a = String(document.f1.s1.value);
+                b = Number(document.f1.s2.value);
+                c = String(document.forms["f1"].ju.value);
+                d = String(document.forms["f1"].s3.value);
+                e = String(document.forms["f1"].s4.value);
+                f = String(document.forms["f1"].s5.value);
+                g = String(document.forms["f1"].s6.value);
+                if(!a || b < 1 || !d || !e || !f || !g){
+                    alert("Complete all fields");
+                    event.preventDefault();
+                }
+                else if(b < 18 || b > 120){
+                    alert("You are under age");
+                    event.preventDefault();
+                    return;
+                }
+                else if(isNaN(b)){
+                    alert("Enter valid age");
+                    event.preventDefault();
+                    return;
+                }
+                else if(e !== f){
+                    alert("Passwords does'nt match");
+                    event.preventDefault();
+                }
+                else if(d.length < 4){
+                    alert("Enter valid username");
+                    event.preventDefault();
+                }
+                else if(!c){
+                    alert("Select the gender");
+                    event.preventDefault();
+                }
+                else if(!document.f1.s7.checked){
+                    alert("Please agree terms and conditions");
+                    event.preventDefault();
+                }
+                else
+                    window.location.href = "Shop.html";
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            Let us start here
+        </header>
+        <form name="f1" onsubmit="iu(event);">
+        <span class="hp">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" maxlength="20" name="s1"><br><br><br>
+        <span class="hp">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="number" min="0" max="120" name="s2"><br><br><br>
+        <span class="hp">Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        Male <input type="radio" name="ju" value="m"> Female <input type="radio" name="ju" value="f"><br><br><br>
+        <span class="hp">Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="text" maxlength="20" name="s3"><br><br><br>
+        <span class="hp">Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="password" maxlength="20" name="s4"><br><br><br>
+        <span class="hp">Confirm Password:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <input type="password" maxlength="20" name="s5"><br><br><br>
+        <span class="hp">Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br><br>
+        <textarea rows="12" col="12" name="s6"></textarea><br><br><br>
+        Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select>
+            <option>India</option>
+            <option>Canada</option>
+            <option>Russia</option>
+            <option>Italy</option>
+        </select>
+        <div class="Ex">
+        <input type="checkbox" name="s7">
+        &nbsp;&nbsp;I agree all terms and conditions
+        </div>
+        <div class="tyn">
+        <button type="submit">Submit</button>   <!--For style replace button with a tag-->
+       </div>
+    </form>
+    </body>
+</html>
