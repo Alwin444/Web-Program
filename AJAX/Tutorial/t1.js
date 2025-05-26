@@ -1,5 +1,5 @@
 fetch("t1.php")
-.then(response => response.text())
+.then(response => response.text())  //Plain text, can be returned in JSON format
 .then(data => {
     const arr = data.split('|');
     let Income = arr[0];
